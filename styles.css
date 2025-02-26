@@ -36,7 +36,7 @@ a {
 .header {
   box-sizing: border-box;
   height: 100vh;
-  background-image: url(../image/image-bg-header.png);
+  background-image: url(src/image/image-bg-header.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -44,7 +44,7 @@ a {
   justify-content: space-between;
 }
 .header__waves {
-  background-image: url(../image/sound-waves.png);
+  background-image: url(src/image/sound-waves.png);
   background-size: cover;
   height: 58px;
   width: 48px;
@@ -157,7 +157,7 @@ a {
   }
 }
 .icon--phone {
-  background-image: url(../image/icon/icon-phone.png);
+  background-image: url(src/image/icon/icon-phone.png);
   position: relative;
 }
 .icon--phone::before {
@@ -180,14 +180,14 @@ a {
   visibility: visible;
 }
 .icon--menu {
-  background-image: url(../image/icon/icon-burger-menu.png);
+  background-image: url(src/image/icon/icon-burger-menu.png);
   transition: 0.3s;
 }
 .icon--menu:hover {
-  background-image: url(../image/icon/icon-burger-menu-hover.png);
+  background-image: url(src/image/icon/icon-burger-menu-hover.png);
 }
 .icon--close {
-  background-image: url(../image/icon/icon-close.png);
+  background-image: url(src/image/icon/icon-close.png);
 }
 
 .menu {
@@ -396,13 +396,13 @@ a {
   }
 }
 .card__image--smart {
-  background-image: url(../image/smart-speaker.png);
+  background-image: url(src/image/smart-speaker.png);
 }
 .card__image--flex {
-  background-image: url(../image/flex-speaker.png);
+  background-image: url(src/image/flex-speaker.png);
 }
 .card__image--color {
-  background-image: url(../image/color-speaker.png);
+  background-image: url(src/image/color-speaker.png);
 }
 .card__title {
   margin-bottom: 8px;
@@ -478,24 +478,24 @@ a {
   background-size: cover;
 }
 .categorie__image--1__1 {
-  background-image: url(../image/images-categories/cat1-left.png);
+  background-image: url(src/image/images-categories/cat1-left.png);
   background-position: center;
 }
 .categorie__image--1__2 {
-  background-image: url(../image/images-categories/cat1-right.png);
+  background-image: url(src/image/images-categories/cat1-right.png);
 }
 .categorie__image--2__1 {
-  background-image: url(../image/images-categories/cat2-left.png);
+  background-image: url(src/image/images-categories/cat2-left.png);
   background-position: right;
 }
 .categorie__image--2__2 {
-  background-image: url(../image/images-categories/cat2-right.png);
+  background-image: url(src/image/images-categories/cat2-right.png);
 }
 .categorie__image--3__1 {
-  background-image: url(../image/images-categories/cat3-left.png);
+  background-image: url(src/image/images-categories/cat3-left.png);
 }
 .categorie__image--3__2 {
-  background-image: url(../image/images-categories/cat3-right.png);
+  background-image: url(src/image/images-categories/cat3-right.png);
   background-position: right;
 }
 .categorie__title {
@@ -657,7 +657,7 @@ a {
 }
 
 .footer {
-  background-image: url(../image/image-bg-footer.png);
+  background-image: url(src/image/image-bg-footer.png);
   height: 200px;
   background-size: cover;
   background-position: center;
