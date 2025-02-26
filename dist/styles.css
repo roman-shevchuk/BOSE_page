@@ -315,7 +315,7 @@ a {
     line-height: 40px;
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .section-title {
     font-size: 48px;
     line-height: 48px;
