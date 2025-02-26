@@ -1,0 +1,54 @@
+@use '../util/mixins' as *;
+@use '../util/variables.scss' as *;
+
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-size: cover;
+  @include hover(transform, scale(1.2));
+  @include onTablet() {
+    height: 32px;
+    width: 32px;
+  }
+
+  &--phone {
+    background-image: url(../image/icon/icon-phone.png);
+    position: relative;
+  }
+
+  &--phone::before {
+    position: absolute;
+    content: "+1 234 5555-55-55";
+    position: absolute;
+    right: calc(100% + 8px);
+    top: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    visibility: hidden;
+    opacity: 0;
+    white-space: nowrap;
+    transition: $transition-time;
+  }
+
+  &--phone:hover::before {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &--menu {
+    background-image: url(../image/icon/icon-burger-menu.png);
+    transition: $transition-time;
+  
+  }
+
+  &--menu:hover {
+    background-image: url(../image/icon/icon-burger-menu-hover.png);
+  }
+  
+  &--close {
+    background-image: url(../image/icon/icon-close.png);
+  }
+}

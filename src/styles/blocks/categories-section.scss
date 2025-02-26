@@ -1,0 +1,86 @@
+
+@use '../util/mixins' as *;
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  @include onTablet {
+    gap: 64px;
+  }
+}
+
+.image__wide {
+  height: 130px;
+  width: 130px;
+  @include onTablet {
+    height: 184px;
+    width: 392px;
+  }
+  @include onDesktop {
+    height: 324px;
+    width: 672px;
+  }
+}
+
+.image__square {
+  height: 130px;
+  width: 130px;
+  @include onTablet {
+    height: 184px;
+    width: 184px;
+  }
+  @include onDesktop {
+    height: 324px;
+    width: 324px;
+  }
+}
+
+.categorie {
+  &__images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    @include onTablet {
+      gap: 24px;
+    }
+  }
+  
+  &__image {
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    &--1__1 {
+      background-image: url(../image/images-categories/cat1-left.png);
+      background-position: center;
+    }
+    &--1__2 {
+      background-image: url(../image/images-categories/cat1-right.png);
+    }
+  
+    &--2__1 {
+      background-image: url(../image/images-categories/cat2-left.png);
+      background-position: right;
+    }
+    &--2__2 {
+      background-image: url(../image/images-categories/cat2-right.png);
+    }
+  
+    &--3__1 {
+      background-image: url(../image/images-categories/cat3-left.png);
+    }
+    &--3__2 {
+      background-image: url(../image/images-categories/cat3-right.png);
+      background-position: right;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    margin-top: 16px;
+  }
+}
+
+

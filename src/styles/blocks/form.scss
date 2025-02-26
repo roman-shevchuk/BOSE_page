@@ -1,0 +1,45 @@
+@use '../util/variables.scss' as *;
+@use '../util/mixins' as *;
+
+.form {
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  gap: 16px;
+  @include onTablet {
+    width: 288px;
+  }
+  @include onTablet {
+    width: 412px;
+  }
+
+  &__field {
+    border-radius: 40px;
+    background-color: $form-bg-color;
+    border: 1px solid $form-bg-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 14px 16px;
+
+    &::placeholder {
+      color: $contact-secondary-text-color;
+      }
+
+    &--message {
+      border-radius: 16px;
+      resize: none;
+    }
+  }
+
+  &__field:hover {
+    border: 1px solid $form-border-color;
+    transition: border $transition-time;
+  }
+  
+  &__field:focus {
+    border: 1px solid $main-text-color;
+    outline: none;
+  }
+}

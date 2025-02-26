@@ -1,0 +1,61 @@
+@use '../util/mixins' as *;
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  @include onDesktop {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+
+  &__image {
+    display: block;
+    background-size: cover;
+    height: 280px;
+    width: 280px;
+    margin-bottom: 32px;
+    @include onTablet {
+      height: 392px;
+      width: 392px;
+    }
+    @include onDesktop {
+      height: 324px;
+      width: 324px;
+    }
+
+    &--smart{
+      background-image: url(../image/smart-speaker.png);
+    }
+
+    &--flex{
+      background-image: url(../image/flex-speaker.png);
+    }
+
+    &--color{
+      background-image: url(../image/color-speaker.png);
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+
+  &__descriptuon{
+    margin-bottom: 16px;
+    font-weight: 400;
+  }
+  
+  &__prise {
+    font-weight: 700;
+  }
+}
