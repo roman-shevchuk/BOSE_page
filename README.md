@@ -1,2 +1,2 @@
 # BOSE_page
-[DEMO_LINK] - "https://github.com/roman-shevchuk/BOSE_page";
+[DEMO_LINK] - "https://roman-shevchuk.github.io/BOSE_page/";
