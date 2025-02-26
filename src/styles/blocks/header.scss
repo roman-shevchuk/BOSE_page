@@ -44,8 +44,8 @@
   }
 
   &__bottom {
-    @include contentPaddingInline;
     padding-bottom: 40px;
+    @include contentPaddingInline;
     @include onTablet {
       padding-bottom: 64px;
     }

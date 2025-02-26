@@ -1,11 +1,11 @@
 @use '../util/mixins' as *;
 
 .top-bar {
-  @include contentPaddingInline;
   padding-block: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include contentPaddingInline;
   @include onTablet {
     padding-block: 32px;
   }

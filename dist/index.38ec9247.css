@@ -93,8 +93,8 @@ a {
 }
 
 .header__bottom {
-  padding-inline: 20px;
   padding-bottom: 40px;
+  padding-inline: 20px;
 }
 
 @media (width >= 576px) {
