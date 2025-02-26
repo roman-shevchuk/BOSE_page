@@ -83,8 +83,8 @@ a {
   }
 }
 .header__bottom {
-  padding-inline: 20px;
   padding-bottom: 40px;
+  padding-inline: 20px;
 }
 @media (min-width: 576px) {
   .header__bottom {
@@ -103,11 +103,11 @@ a {
 }
 
 .top-bar {
-  padding-inline: 20px;
   padding-block: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-inline: 20px;
 }
 @media (min-width: 576px) {
   .top-bar {
